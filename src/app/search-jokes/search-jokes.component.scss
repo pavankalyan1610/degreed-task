@@ -1,0 +1,12 @@
+.search-jokes{
+    margin-top: 3rem;
+    .search-jokes-card {
+        width: 50rem;
+        .card-header {
+            height: 5rem;
+            .search-results-text {
+                margin-left: 4px;
+            }
+        }
+    }
+}

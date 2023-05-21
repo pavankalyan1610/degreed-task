@@ -1,0 +1,19 @@
+<div class="random-jokes">
+    <div class="card random-jokes-card">
+        <div class="card-header text-center ">
+            <strong> Keep Smiling! </strong>
+        </div>
+        <div class="card-body text-center">
+            <ng-container *ngIf="!jokeLoading; else loadingTemplate">
+                <span>
+                    {{randomJoke}}
+                </span>
+            </ng-container>
+            <ng-template #loadingTemplate>
+                <div class="spinner-border" role="status">
+                    <span class="sr-only"></span>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>
